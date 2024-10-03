@@ -29,7 +29,7 @@ public class GenerateStatsCSV {
     public static void main(String[] args) {
         try {
             FileWriter csvWriter = new FileWriter("results.csv");
-            csvWriter.append("vertices,edges,time(ms),comparisons");
+            csvWriter.append("vertices,edges,time(ms),comparisons\n");
             long[] comparisons = new long[1];
 
             for (int V = 100; V <= 200; V++) {
